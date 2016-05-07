@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@color/grey</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <!-- Orange Theme -->
+    <style name="AppTheme.Orange" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimaryOrange</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkOrange</item>
+        <item name="colorAccent">@color/colorAccentOrange</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/black</item>
+        <item name="android:textColorSecondaryInverse">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="actionOverflowMenuStyle">@style/OrangeOptionsMenu</item>
+    </style>
+
+    <style name="OrangeOptionsMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/colorPrimaryOrange</item>
+    </style>
+
+    <!-- Blue Theme -->
+    <style name="AppTheme.Blue" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:textColorSecondaryInverse">@color/white</item>
+        <item name="android:textColorHint">@color/whiteGrey</item>
+        <item name="android:textColor">@color/colorPrimaryBlue</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:buttonStyleSmall">@style/BlueButtonStyle</item>
+        <item name="android:windowBackground">@color/darkGrey</item>
+        <item name="actionOverflowMenuStyle">@style/BlueOptionsMenu</item>
+    </style>
+
+    <style name="BlueOptionsMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/darkGrey</item>
+    </style>
+
+    <style name="BlueButtonStyle">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/colorPrimaryBlue</item>
+    </style>
+
+    <style name="AppTheme.Blue.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Blue.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.Blue.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

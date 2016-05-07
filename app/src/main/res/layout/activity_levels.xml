@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.eoinmaguire.vibrio.Levels"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/levelHeading">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Levels:"
+            android:textSize="20dp"
+            android:padding="10dp" />
+
+        <View
+            android:background="@color/colorPrimaryBlue"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/level1"
+                android:layout_width="@dimen/levelButton"
+                android:layout_height="@dimen/levelButton"
+                android:layout_margin="10dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="4.0"
+                android:text="1"
+                android:onClick="levelSelect"
+                android:tag="1"/>
+
+            <Button
+                android:id="@+id/level2"
+                android:layout_width="@dimen/levelButton"
+                android:layout_height="@dimen/levelButton"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="4.0"
+                android:text="2"
+                android:onClick="levelSelect"
+                android:layout_alignTop="@+id/level1"
+                android:layout_centerHorizontal="true"
+                android:tag="2"/>
+
+            <Button
+                android:id="@+id/level3"
+                android:layout_width="@dimen/levelButton"
+                android:layout_height="@dimen/levelButton"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="4.0"
+                android:text="3"
+                android:layout_alignTop="@+id/level2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="levelSelect"
+                android:tag="3"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
